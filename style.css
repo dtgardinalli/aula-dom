@@ -1,0 +1,35 @@
+body{
+    margin: 0;
+    background-color: rgb(94, 194, 228);
+}
+
+nav{
+    background-color: rgb(216, 113, 128);
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+a{
+    color: white;
+    font-family: 'Gloria Hallelujah', cursive;
+    text-decoration: none;
+    font-size: 20pt;
+    font-weight: bolder;
+}
+
+img{
+    height: 86px;
+}
+
+ul{
+    list-style-type: none;
+    display: none;
+    justify-content: space-around;
+    width: 70%;
+}
+
+.ativo{
+    display: flex;
+}
