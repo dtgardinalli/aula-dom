@@ -1,13 +1,14 @@
 body{
     margin: 0;
     background-color: rgb(94, 194, 228);
+    overflow-x: hidden;
 }
 
 nav{
     background-color: rgb(216, 113, 128);
     height: 80px;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
 }
 
@@ -19,17 +20,55 @@ a{
     font-weight: bolder;
 }
 
-img{
+a:hover{
+    color: rgb(30, 92, 112);
+    font-size: 24pt;
+}
+
+nav div img{
     height: 86px;
 }
 
 ul{
     list-style-type: none;
-    display: none;
+    transform: translateX(100vw);
+    transition: 2s;
+    display: flex;
     justify-content: space-around;
     width: 70%;
 }
 
 .ativo{
+    transform: translateX(0);
+}
+
+main{
     display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 550px;
+}
+main img{
+    width: 600px;
+
+}
+
+.roda-jequiti{
+    transform: rotate(1440deg);
+    transition: 2s;
+}
+
+section{
+    display: flex;
+    justify-content: right;
+    width: 100px;
+    height: 150px;
+
+}
+
+section img{
+    height: 250px;
+    width: 300px;
+    margin: 30%;
 }
